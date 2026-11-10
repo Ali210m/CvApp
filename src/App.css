@@ -1,0 +1,33 @@
+.app-layout {
+  display: flex;
+  align-items: flex-start;
+  gap: 30px;
+  padding: 30px;
+}
+
+.left-column {
+  flex: 1;
+  min-width: 0;
+}
+
+.right-column {
+  flex: 1;
+  min-width: 0;
+  position: sticky;
+  top: 30px;
+}
+
+@media (max-width: 900px) {
+  .app-layout {
+    flex-direction: column;
+  }
+
+  .left-column,
+  .right-column {
+    width: 100%;
+  }
+
+  .right-column {
+    position: static;
+  }
+}

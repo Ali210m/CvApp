@@ -1,0 +1,110 @@
+.card {
+  width: min(100%, 620px);
+  margin: 0 auto;
+  padding: 28px;
+  border: 1px solid #e2e8f0;
+  border-radius: 16px;
+  background: #fff;
+  box-shadow: 0 12px 32px rgb(15 23 42 / 8%);
+}
+
+.title {
+  margin: 0 0 22px;
+  color: #172033;
+  font-size: 1.5rem;
+}
+
+.form {
+  display: grid;
+  gap: 16px;
+}
+
+.field {
+  display: grid;
+  gap: 7px;
+}
+
+.label {
+  color: #344054;
+  font-size: 0.92rem;
+  font-weight: 600;
+}
+
+.input,
+.textarea {
+  box-sizing: border-box;
+  width: 100%;
+  padding: 11px 12px;
+  border: 1px solid #cbd5e1;
+  border-radius: 8px;
+  color: #172033;
+  font: inherit;
+}
+
+.input:focus,
+.textarea:focus {
+  border-color: #4f46e5;
+  outline: 3px solid rgb(79 70 229 / 15%);
+}
+
+.textarea {
+  min-height: 120px;
+  resize: vertical;
+}
+
+.error {
+  margin: 0;
+  color: #b42318;
+  font-size: 0.85rem;
+}
+
+.photoPreview {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  color: #475467;
+  font-size: 0.9rem;
+  overflow-wrap: anywhere;
+}
+
+.photoPreview img {
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.button {
+  justify-self: start;
+  padding: 11px 18px;
+  border: 0;
+  border-radius: 8px;
+  background: #4f46e5;
+  color: white;
+  cursor: pointer;
+  font: inherit;
+  font-weight: 600;
+}
+
+.button:hover {
+  background: #4338ca;
+}
+
+.submitRow {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 12px;
+}
+
+.submitError {
+  margin: 0;
+  color: #b42318;
+  font-size: 0.9rem;
+}
+
+@media (max-width: 560px) {
+  .card {
+    padding: 20px;
+  }
+}
